@@ -46,81 +46,135 @@
     </svg>
 
     <header class="header">
-            <div class="header__menu">
-                <p class="logo">
-                    <a class="logo__link" href="#">
-                        <img src="images/logo.svg" width="96" height="29" alt="Логотип">
-                    </a>
-                </p>
-                <button class="toggle toggle--closed toggle--no-js">
-                    <span>Меню</span>
-                </button>
-            </div>
-            <nav class="main-nav main-nav--closed main-nav--no-js">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item">
-                        <a href="wedding.html">Cвадебная
-                            флористика</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="bouquet.html">Букеты на любые
-                            мероприятия</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="bride.html">Букеты невесты</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="composition.html">Композиции</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="event.html">Оформление
-                            мероприятий</a>
-                    </li>
-                </ul>
-            </nav>
-            <h1 class="header__title">Флористика
-                с душой</h1>
-            <a class="header__button button-transparent" href="#">Смотреть работы</a>
-            <ul class="header__social social">
-                <li class="social__item">
-                    <a class="social__link" href="">
-                        <svg width="18" height="18">
-                            <use xlink:href="#insta"></use>
-                        </svg>
+        <div class="header__menu">
+            <p class="logo">
+                <a class="logo__link" href="#">
+                    <img src="images/logo.svg" width="96" height="29" alt="Логотип">
+                </a>
+            </p>
+            <button class="toggle toggle--closed toggle--no-js">
+                <span>Меню</span>
+            </button>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--no-js">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="wedding.html">Cвадебная
+                        флористика</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="bouquet.html">Букеты на любые
+                        мероприятия</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="wedding.html">Букеты невесты</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="composition.html">Композиции</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="event.html">Оформление
+                        мероприятий</a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="header__title">Флористика
+            с душой</h1>
+        <a class="header__button button-transparent" href="#">Смотреть работы</a>
+        <ul class="header__social social">
+            <li class="social__item">
+                <a class="social__link" href="">
+                    <svg width="18" height="18">
+                        <use xlink:href="#insta"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__link" href="">
+                    <svg width="18" height="18">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__link" href="">
+                    <svg width="20" height="20">
+                        <use xlink:href="#whatsapp"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__link" href="">
+                    <svg width="18" height="18">
+                        <use xlink:href="#vk"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <p class="header__link-down">
+            <a href="">
+                <span>Смотреть каталог</span>
+                <svg width="15" height="20">
+                    <use xlink:href="#down"></use>
+                </svg>
+            </a>
+        </p>
+        <div class="header__inner"></div>
+    </header>
+
+    <main class="container">
+        <section class="catalog">
+            <h2 class="catalog__title title">Каталог услуг</h2>
+            <ul class="catalog__slider">
+                <li class="catalog__item catalog__item--wedding">
+                    <a class="catalog__link" href="wedding.html">
+                        <picture>
+                            <img src="images/wedding@1x.jpg" srcset="images/wedding@1x.jpg 1x, images/wedding@2x.jpg 2x"
+                                alt="Фото" width="288" height="392">
+                        </picture>
+                        <span>01</span>
+                        <h3 class="catalog__subtitle">Букет невесты и свадебное
+                            оформление</h3>
+                        <a class="catalog__button button-white" href="#">Смотреть работы</a>
                     </a>
                 </li>
-                <li class="social__item">
-                    <a class="social__link" href="">
-                        <svg width="18" height="18">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
+                <li class="catalog__item catalog__item--bouquet">
+                    <a class="catalog__link" href="bouquet.html">
+                        <picture>
+                            <img src="images/bouqet@1x.jpg" srcset="images/bouqet@1x.jpg 1x, images/bouqet@2x.jpg 2x"
+                                alt="Фото" width="288" height="392">
+                        </picture>
+                        <span>02</span>
+                        <h3 class="catalog__subtitle">Букеты на торжества</h3>
+                        <a class="catalog__button button-white" href="#">Смотреть работы</a>
                     </a>
                 </li>
-                <li class="social__item">
-                    <a class="social__link" href="">
-                        <svg width="20" height="20">
-                            <use xlink:href="#whatsapp"></use>
-                        </svg>
+                <li class="catalog__item catalog__item--composition">
+                    <a class="catalog__link" href="composition.html">
+                        <picture>
+                            <img src="images/composition@1x.jpg"
+                                srcset="images/composition@1x.jpg 1x, images/composition@2x.jpg 2x" alt="Фото"
+                                width="288" height="392">
+                        </picture>
+                        <span>03</span>
+                        <h3 class="catalog__subtitle">Композиции</h3>
+                        <a class="catalog__button button-white" href="#">Смотреть работы</a>
                     </a>
                 </li>
-                <li class="social__item">
-                    <a class="social__link" href="">
-                        <svg width="18" height="18">
-                            <use xlink:href="#vk"></use>
-                        </svg>
+                <li class="catalog__item catalog__item--event">
+                    <picture>
+                        <img src="images/event@1x.jpg" srcset="images/event@1x.jpg 1x, images/event@2x.jpg 2x"
+                            alt="Фото" width="288" height="392">
+                    </picture>
+                    <a class="catalog__link" href="event.html">
+                        <span>04</span>
+                        <h3 class="catalog__subtitle">Оформление мероприятий</h3>
+                        <a class="catalog__button button-white" href="#">Смотреть работы</a>
                     </a>
                 </li>
             </ul>
-            <p class="header__link-down">
-                <a href="">
-                    <span>Смотреть каталог</span>
-                    <svg width="15" height="20">
-                        <use xlink:href="#down"></use>
-                    </svg>
-                </a>
-            </p>
-            <div class="header__inner"></div>
-    </header>
+        </section>
+    </main>
 
 
 

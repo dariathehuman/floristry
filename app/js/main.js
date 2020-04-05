@@ -16,3 +16,34 @@ menuBtn.addEventListener('click', function (evt) {
         social.classList.toggle('social__link--nav');
     });
 });
+
+$(function () {
+
+    $('.catalog__slider').slick({
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 1279,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: false,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ]
+    });
+
+});
