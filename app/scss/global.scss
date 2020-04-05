@@ -1,0 +1,59 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Forum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: $red;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button-transparent {
+  display: block;
+  padding: 19px 30px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #ffffff;
+}
+
+@media (min-width: 768px) {
+  .button-transparent {
+    padding: 22px 40px;
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
