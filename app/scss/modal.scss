@@ -1,0 +1,169 @@
+.modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 288px;
+    background-color: $red;
+    z-index: 2;
+    &__inner {
+        padding: 64px 20px;
+    }
+    &__text {
+        @include reset-style;
+        margin-bottom: 50px;
+        white-space: pre-line;
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+    }
+    input {
+        margin-bottom: 16px;
+        padding: 12px 20px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        background-color: transparent;
+        border: 1px solid rgba(246, 246, 249, 0.2);
+        &:focus {
+            outline: 1px solid rgba(246, 246, 249, 0.9);
+        }
+        &:last-of-type {
+            margin-bottom: 27px;
+        }
+    }
+    &__button {
+        width: 100%;
+        font-size: 11px;
+        line-height: 12px;
+    }
+    &__close {
+        font-size: 0;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 22px;
+        height: 22px;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            top: 11px;
+            right: 0px;
+            width: 31px;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        &::before {
+            transform: rotate(-45deg);
+        }
+        &::after {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.modal-show {
+    display: block;
+}
+
+.modal-overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 6, 6, 0.7);
+    z-index: 1;
+}
+
+.overlay-show {
+    display: block;
+}
+
+.modal input.required {
+    border: 1px solid red;
+}
+
+@media (min-width: 768px) {
+    .modal {
+        width: 464px;
+        &__inner {
+            padding: 104px 45px 78px;
+        }
+        &__text {
+            margin-bottom: 78px;
+            font-size: 30px;
+            line-height: 33px;
+        }
+        input {
+            margin-bottom: 24px;
+            padding: 20px 33px;
+            font-size: 20px;
+            line-height: 22px;
+            &:last-of-type {
+                margin-bottom: 40px;
+            }
+        }
+        &__close {
+            top: 40px;
+            right: 40px;
+            &::before,
+            &::after {
+                right: -5px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .modal {
+        width: 716px;
+        background-image: url(../images/modal@1x.jpg);
+        background-repeat: no-repeat;
+        background-position: left 0;
+        background-size: contain;
+        &__inner {
+            padding: 66px;
+            width: 381px;
+            margin: 0 auto;
+            margin-right: 0;
+        }
+        &__text {
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 22px;
+        }
+        input {
+            margin-bottom: 16px;
+            padding: 14px 22px;
+            font-size: 14px;
+            line-height: 15px;
+            &:last-of-type {
+                margin-bottom: 27px;
+            }
+        }
+        &__close {
+            top: 22px;
+            right: 24px;
+            &::before,
+            &::after {
+                right: -5px;
+            }
+        }
+    }
+    @include retina {
+        .modal {
+            background-image: url(../images/modal@2x.jpg);
+        }
+    }
+}

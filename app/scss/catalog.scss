@@ -113,10 +113,17 @@
         margin: 0 auto;
     }
     .catalog__item {
+        padding-top: 10px;
+        box-sizing: border-box;
         img {
             width: 270px;
             height: auto;
-            padding-top: 10px;
+            position: relative;
+            box-sizing: border-box;
+            &:hover {
+               filter: brightness(60%);
+               transition: 0.5s;
+            }
         }
         &:hover {
             border: 1px solid rgba(255, 255, 255, 0.2);

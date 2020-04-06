@@ -40,7 +40,7 @@
     margin: 0 auto;
     margin-bottom: 70px;
     width: 55%;
-    cursor: pointer;
+    z-index: 9;
 }
 
 .header__social {
@@ -95,7 +95,7 @@
         padding: 38px 50px 0;
     }
     .header__title {
-        padding-top: 246px;
+        padding-top: 222px;
         padding-bottom: 82px;
         font-size: 70px;
         line-height: 77px;
