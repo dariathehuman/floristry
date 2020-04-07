@@ -165,7 +165,8 @@
         top: -107px;
         &__list {
             position: relative;
-            top: 100px;
+            top: 0px;
+            justify-content: center;
         }
         &__item {
             a {
@@ -193,7 +194,6 @@
     .main-nav {
         top: -145px;
         &__list {
-            justify-content: center;
             a {
                 padding: 40px 0px;
                 font-size: 35px;

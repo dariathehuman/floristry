@@ -104,4 +104,17 @@ $(function () {
         ]
     });
 
+    $('.inner__slider').slick({
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            }
+        ]
+    });
+
 });
