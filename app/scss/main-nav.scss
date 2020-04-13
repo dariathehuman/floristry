@@ -170,7 +170,7 @@
         }
         &__item {
             a {
-                padding: 20px 0;
+                padding: 24px 0;
                 font-size: 24px;
                 line-height: 26px;
                 &:hover {
@@ -194,6 +194,7 @@
     .main-nav {
         top: -145px;
         &__list {
+            top: 90px;
             a {
                 padding: 40px 0px;
                 font-size: 35px;
