@@ -145,6 +145,10 @@
         img {
             width: 158px;
             height: 49px;
+            &:hover {
+                filter: invert(.5);
+                transition: .7s;
+            }
         }
         &--nav {
             top: 0;
@@ -167,6 +171,7 @@
         position: absolute;
         left: 50px;
         bottom: 75px;
+        width: 100px;
         z-index: 6;
         a {
             width: 25px;
@@ -175,6 +180,12 @@
             svg {
                 width: 25px;
                 height: 25px;
+            }
+            &:hover {
+                svg {
+                    transform: scale(1.05);
+                    transition: .6s;
+                }
             }
         }
     }

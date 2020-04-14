@@ -1,6 +1,6 @@
 .main-nav {
-    position: relative;
-    top: -10px;
+    position: absolute;
+    top: 62px;
     left: 0;
     right: 0;
     z-index: 5;
@@ -119,17 +119,17 @@
         }
     }
     .main-nav {
-        top: -93px;
+        top: 0;
         &__list {
             position: relative;
             top: 200px;
-            min-height: 800px;
+            min-height: 500px;
         }
         &__item {
             a {
                 font-size: 30px;
                 line-height: 33px;
-                padding: 4.1% 0;
+                padding: 20px 0;
                 &:hover {
                     font-size: 45px;
                     line-height: 50px;
@@ -160,13 +160,17 @@
                 font-size: 0;
             }
         }
+        &:hover {
+            filter: invert(.5);
+            transition: .7s;
+        }
     }
     .main-nav {
-        top: -107px;
         &__list {
             position: relative;
             top: 0px;
             justify-content: center;
+            min-height: 700px;
         }
         &__item {
             a {
@@ -192,9 +196,8 @@
         }
     }
     .main-nav {
-        top: -145px;
         &__list {
-            top: 90px;
+            top: 130px;
             a {
                 padding: 40px 0px;
                 font-size: 35px;
