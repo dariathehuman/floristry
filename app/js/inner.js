@@ -19,6 +19,60 @@ menuBtn.addEventListener('click', function (evt) {
     });
 });
 
+//  Script for modal 
+
+var orderLink = document.querySelector('.inner-info__button');
+var popup = document.querySelector('.modal');
+var overlay = document.querySelector('.modal-overlay');
+var close = document.querySelector('.modal__close');
+
+orderLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    popup.classList.add('modal-show');
+    overlay.classList.add('overlay-show');
+});
+
+close.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    popup.classList.remove('modal-show');
+    overlay.classList.remove('overlay-show');
+})
+
+overlay.addEventListener('click', function () {
+    popup.classList.remove('modal-show');
+    overlay.classList.remove('overlay-show');
+});
+
+window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+        evt.preventDefault();
+        popup.classList.remove('modal-show');
+        overlay.classList.remove('overlay-show');
+    }
+});
+
+window.onload = function () {
+    var form = document.querySelector('.modal__form');
+    var name = form.querySelector('[name=user-name]');
+    var phone = form.querySelector('[name=phone]');
+
+    form.addEventListener('submit', function (evt) {
+        if (!name.value && !phone.value) {
+            evt.preventDefault();
+            name.classList.add('required');
+            phone.classList.add('required');
+        }
+        if (!name.value && phone.value) {
+            evt.preventDefault();
+            name.classList.add('required');
+        }
+        if (name.value && !phone.value) {
+            evt.preventDefault();
+            phone.classList.add('required');
+        }
+    });
+}
+
 // Slick slider
 
 $(function () {

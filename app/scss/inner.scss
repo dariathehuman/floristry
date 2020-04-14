@@ -1,7 +1,7 @@
 .inner-header {
     position: relative;
     z-index: 2;
-    min-height: 443px;
+    min-height: 525px;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-position: 0 64px;
@@ -9,12 +9,24 @@
     &--bouquet {
         background-image: url(../images/bouquet-bg-mobile@1x.jpg);
     }
+    &--wedding {
+        background-image: url(../images/wedding-bg-mobile@1x.jpg);
+    }
+    &--composition {
+        background-image: url(../images/composition-bg-mobile@1x.jpg);
+    }
 }
 
 @include retina {
     .inner-header {
         &--bouquet {
             background-image: url(../images/bouquet-bg-mobile@2x.jpg);
+        }
+        &--wedding {
+            background-image: url(../images/wedding-bg-mobile@2x.jpg);
+        }
+        &--composition {
+            background-image: url(../images/composition-bg-mobile@2x.jpg);
         }
     }
 }
@@ -43,6 +55,9 @@
     &__button {
         margin-bottom: 50px;
     }
+    &__extra {
+        display: none;
+    }
 }
 
 .inner__slider {
@@ -59,19 +74,39 @@
 
 @media (min-width: 768px) {
     .inner-header {
-        min-height: 518px;
+        min-height: 570px;
         background-position: 0 112px;
         &--bouquet {
             background-image: url(../images/bouquet-bg-tablet@1x.jpg);
         }
+        &--wedding {
+            background-image: url(../images/wedding-bg-tablet@1x.jpg);
+        }
+        &--composition {
+            background-image: url(../images/composition-bg-tablet@1x.jpg);
+        }
+
     }
     @include retina {
-        background-image: url(../images/bouquet-bg-tablet@2x.jpg);
+        .inner-header {
+            &--bouquet {
+                background-image: url(../images/bouquet-bg-tablet@2x.jpg);
+            }
+            &--wedding {
+                background-image: url(../images/wedding-bg-tablet@2x.jpg);
+            }
+            &--composition {
+                background-image: url(../images/composition-bg-tablet@2x.jpg);
+            }
+        }
     }
     .inner-info {
-        display: flex;
-        flex-direction: column;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
         &__descr {
+            order: 2;
             padding: 0 50px;
         }
         &__title {
@@ -89,10 +124,20 @@
             font-size: 12px;
             line-height: 13px;
         }
+        &.wedding {
+            .inner-info__title {
+                white-space: pre-line;
+            }
+        }
+        &.composition {
+            .inner-info__title {
+                white-space: pre-line;
+            }
+        }
     }
 
     .inner__slider {
-        order: -1;
+        order: 1;
         margin: 0 60px;
         margin-bottom: 70px;
         .slick-slide {
@@ -119,6 +164,15 @@
         background-position: left 0;
         background-size: 52%;
         background-repeat: no-repeat;
+        &.wedding {
+            background-image: url(../images/wedding-bg-desktop@1x.jpg);
+            .inner-info__wrapper {
+                padding-top: 100px;
+            }
+        }
+        &.composition {
+            background-image: url(../images/composition-bg-desktop@1x.jpg);
+        }
         &__descr {
             padding: 0;
         }
@@ -149,6 +203,7 @@
             cursor: pointer;
         }
         &__extra {
+            display: block;
             @include reset-style;
             position: absolute;
             right: 50px;
@@ -171,6 +226,12 @@
     @include retina {
         .inner-info {
             background-image: url(../images/bouquet-bg-desktop@2x.jpg);
+            &.wedding {
+                background-image: url(../images/wedding-bg-desktop@2x.jpg);
+            }
+            &.composition {
+                background-image: url(../images/composition-bg-desktop@2x.jpg);
+            }
         }
     }
 
@@ -210,7 +271,13 @@
 
 @media (min-width: 1600px) {
     .inner-info__wrapper {
-        padding: 220px 80px 45px;
+        padding: 210px 80px 45px;
+    }
+    .inner-info.wedding .inner-info__wrapper {
+        padding-top: 130px;
+    }
+    .inner-info.composition .inner-info__wrapper {
+        padding-top: 170px;
     }
     .inner-info {
         &__title {
@@ -218,10 +285,10 @@
             line-height: 55px;
             margin-bottom: 50px;
             &:after {
-                top: 30px;
-                left: -715px;
-                width: 780px;
-                height: 870px;
+                top: 15px;
+                left: -785px;
+                width: 850px;
+                height: 820px;
             }
         }
         &__text {
@@ -229,7 +296,7 @@
         }
         &__extra {
             right: 90px;
-            bottom: -70px;
+            bottom: -40px;
         }
         &__button {
             margin-bottom: 60px;
