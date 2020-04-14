@@ -15,6 +15,9 @@
     &--composition {
         background-image: url(../images/composition-bg-mobile@1x.jpg);
     }
+    &--event {
+        background-image: url(../images/event-bg-mobile@1x.jpg);
+    }
 }
 
 @include retina {
@@ -27,6 +30,9 @@
         }
         &--composition {
             background-image: url(../images/composition-bg-mobile@2x.jpg);
+        }
+        &--event {
+            background-image: url(../images/event-bg-mobile@2x.jpg);
         }
     }
 }
@@ -85,6 +91,9 @@
         &--composition {
             background-image: url(../images/composition-bg-tablet@1x.jpg);
         }
+        &--event {
+            background-image: url(../images/event-bg-tablet@1x.jpg);
+        }
 
     }
     @include retina {
@@ -97,6 +106,9 @@
             }
             &--composition {
                 background-image: url(../images/composition-bg-tablet@2x.jpg);
+            }
+            &--event {
+                background-image: url(../images/event-bg-tablet@2x.jpg);
             }
         }
     }
@@ -173,6 +185,9 @@
         &.composition {
             background-image: url(../images/composition-bg-desktop@1x.jpg);
         }
+        &.event {
+            background-image: url(../images/event-bg-desktop@1x.jpg);
+        }
         &__descr {
             padding: 0;
         }
@@ -232,6 +247,9 @@
             &.composition {
                 background-image: url(../images/composition-bg-desktop@2x.jpg);
             }
+            &.event {
+                background-image: url(../images/event-bg-desktop@2x.jpg);
+            }
         }
     }
 
@@ -277,6 +295,9 @@
         padding-top: 130px;
     }
     .inner-info.composition .inner-info__wrapper {
+        padding-top: 170px;
+    }
+    .inner-info.event .inner-info__wrapper {
         padding-top: 170px;
     }
     .inner-info {
